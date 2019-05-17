@@ -48,7 +48,7 @@ stream.once('open', function () {
                 let char = values[5].replace('\\N', ' ');
 
                 if(char !== ' ') {
-                    char = '"' + eval(char).join('";"') + '"';
+                    char = '"' + eval(char).join(';') + '"';
                 }
 
                 let rel = '';
